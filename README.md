@@ -1,3 +1,17 @@
+<!--
+@Author: Anas Aboureada <AnasAboureada>
+@Date:   Sat, 11th Mar 2017, T 09:29 +01:00
+@Email:  me@anasaboureada.com
+@Project: awesome-full-stack-web-developer
+@Filename: README.md
+@Last modified by:   AnasAboureada
+@Last modified time: Sat, 11th Mar 2017, T 18:14 +01:00
+@License: MIT License
+@Copyright: Copyright (c) 2017 Anas Aboureada <anasaboureada.com>
+-->
+
+
+
 # Awesome Full-Stack Web Developer
 
 Tools, tutorials and interview questions for Full-Stack web developers.
@@ -14,6 +28,7 @@ Tools, tutorials and interview questions for Full-Stack web developers.
 
 - [Front-End Handbook](./books/front_end_handbook_2017.pdf)
 - [Javascript Novice to Ninja](./books/javascript_novice_to_ninja.pdf)
+- [Problem Solving With Algorithms And Data Structures](./books/problem_solving_with_algorithms_and_data_structures.pdf)
 
 ## Interview Questions
 
@@ -25,7 +40,7 @@ Tools, tutorials and interview questions for Full-Stack web developers.
 - [What Do I Need to Know to Ace a JavaScript Interview?](./notes/js_interview.md)
 
 
-# Udacity Nanodegrees
+## Udacity Nanodegrees
 
 [Udacity](https://www.udacity.com/) offers some great courses in their
 [Nanodegree](https://www.udacity.com/nanodegree) programs. If you don't have
