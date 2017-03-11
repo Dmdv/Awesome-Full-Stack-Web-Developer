@@ -5,7 +5,7 @@
 @Project: awesome-full-stack-web-developer
 @Filename: README.md
 @Last modified by:   AnasAboureada
-@Last modified time: Sat, 11th Mar 2017, T 18:14 +01:00
+@Last modified time: Sat, 11th Mar 2017, T 18:33 +01:00
 @License: MIT License
 @Copyright: Copyright (c) 2017 Anas Aboureada <anasaboureada.com>
 -->
@@ -23,6 +23,10 @@ Tools, tutorials and interview questions for Full-Stack web developers.
 - [HTML5 cheat sheet](./cheat_sheets/html5_cheat_sheet.pdf)
 - [Jquiry cheat sheet](./cheat_sheets/jquery_cheat_sheet_1.3.2.pdf)
 - [Algorithm Complexity cheat sheet](./cheat_sheets/complexity_cheatsheet.pdf)
+- [Learn CSS Layout the pedantic way](./books/box_positioning_in_css.pdf)
+- [Mixu's Node book](./books/mixus_node.pdf)
+- [Single page apps in depth](./books/single_page_app.pdf)
+- [Distributed systems: for fun and profit](./books/distributed_systems.pdf)
 
 ## Books
 
