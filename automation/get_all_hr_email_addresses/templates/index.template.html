@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Email List</title>
+</head>
+<body>
+<div class="page-header text-center">
+    <h1 class="text-center">HR Email List  <span class="label label-success small">{{ emails|length }}</span></h1>
+</div>
+
+<div class="table-responsive">
+
+    <table class="table table-striped table-hover">
+        <thead>
+        <td>Email Address</td>
+        <td>Last Name</td>
+        <td>First Name</td>
+        <td>Current Company</td>
+        <td>Current Position</td>
+        </thead>
+        <tbody>
+        {% set counter = 0 -%}
+        {% for email in emails -%}
+        <tr>
+            <td><a href="{{ email['Email Address'] }}">{{ email['Email Address'] }}</a></td>
+            <td>{{ email['Last Name'] }}</td>
+            <td>{{ email['First Name'] }}</td>
+            <td>{{ email['Current Company'] }}</td>
+            <td>{{ email['Current Position'] }}</td>
+        </tr>
+        {% set counter = counter + 1 -%}
+        {% endfor -%}
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

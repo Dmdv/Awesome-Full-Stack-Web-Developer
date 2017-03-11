@@ -1,0 +1,20 @@
+#!/usr/bin/php
+<?php
+$in='';
+while (!feof(STDIN))
+{
+    $res = fread(STDIN, 1024);
+    if (false === $res)
+    {
+    	fwrite(STDERR, "error reading from stdin");
+	    exit(3);
+	}
+    $in .= $res;
+}
+
+$result=str_replace( array("\r\n", "\n", "\r", "\t", ' '), '', $in);
+
+fwrite(STDOUT, $result);
+
+exit(0);
+?>

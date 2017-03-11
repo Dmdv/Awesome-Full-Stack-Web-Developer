@@ -1,0 +1,37 @@
+#!/usr/bin/php
+<?php
+$in='';
+while (!feof(STDIN))
+{
+    $res = fread(STDIN, 1024);
+    if (false === $res)
+    {
+    	fwrite(STDERR, "error reading from stdin");
+	    exit(3);
+	}
+    $in .= $res;
+}
+
+$result=urldecode($in);
+if (false===$result)
+{
+	fwrite(STDERR, "urldecode failed");
+	exit(3);
+}
+$result=base64_decode($result);
+if (false===$result)
+{
+	fwrite(STDERR, "base64_decode failed");
+	exit(3);
+}
+$result=gzinflate($result);
+if (false===$result)
+{
+	fwrite(STDERR, "gzinflate failed");
+	exit(3);
+}
+
+fwrite(STDOUT, $result);
+
+exit(0);
+?>

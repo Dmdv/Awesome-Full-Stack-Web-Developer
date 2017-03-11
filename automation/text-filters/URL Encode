@@ -1,0 +1,23 @@
+#!/usr/bin/php
+<?php
+while (!feof(STDIN))
+{
+    $res = fread(STDIN, 1024);
+    if (false === $res)
+    {
+    	fwrite(STDERR, "error reading from stdin");
+	    exit(3);
+	}
+    $in .= $res;
+}
+$result=urlencode($in);
+if (false===$result)
+{
+	fwrite(STDERR, "urlencode failed");
+	exit(3);
+}
+
+fwrite(STDOUT, $result);
+
+exit(0);
+?>
