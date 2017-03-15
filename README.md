@@ -4,8 +4,8 @@
 @Email:  me@anasaboureada.com
 @Project: awesome-full-stack-web-developer
 @Filename: README.md
-@Last modified by:   AnasAboureada
-@Last modified time: Sat, 11th Mar 2017, T 18:34 +01:00
+@Last modified by:   anas
+@Last modified time: Wed, 15th Mar 2017, T 13:26 +01:00
 @License: MIT License
 @Copyright: Copyright (c) 2017 Anas Aboureada <anasaboureada.com>
 -->
@@ -16,6 +16,19 @@
 
 Tools, tutorials and interview questions for Full-Stack web developers.
 
+
+## Important Topics:
+
+- [You Do Not Need Jquery](./notes/you_do_not_need_jquiry.md)
+- [What Do I Need to Know to Ace a JavaScript Interview?](./notes/js_interview.md)
+- [Scalability (video)](https://www.youtube.com/watch?v=-W9F__D3oY4)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Dependency Injection basics (video)](https://www.youtube.com/watch?v=0X1Ns2NRfks)
+- [Functional programming in JavaScript (video playlist)](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+- [Object Creation in JavaScript (video playlist)](https://www.youtube.com/playlist?list=PL0zVEGEvSaeHBZFy6Q8731rcwk0Gtuxub)
+- [Javascript DOM: event delegation(video)](https://www.youtube.com/watch?v=JStineSts7s)
+- [javaScript call apply and bind (video)](https://www.youtube.com/watch?v=c0mLRpw-9rI)
 
 ## Cheat Sheets
 
@@ -37,12 +50,6 @@ Tools, tutorials and interview questions for Full-Stack web developers.
 ## Interview Questions
 
 - [CSS interview questions and answers](./interview_questions/css_interview_questions_and_answers.md)
-
-## Important Notes:
-
-- [You Do Not Need Jquery](./notes/you_do_not_need_jquiry.md)
-- [What Do I Need to Know to Ace a JavaScript Interview?](./notes/js_interview.md)
-
 
 ## Udacity Nanodegrees
 

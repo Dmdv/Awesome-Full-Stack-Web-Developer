@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="that js dude" content="">    
+    <title>CSS: pure css mockup</title>
+
+    <link rel="shortcut icon" href="images/favicon.jpg">    
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/zenburn.css">
+    <!-- Custom styles for this template -->
+    <style>
+      /* Move down content because we have a fixed navbar that is 50px tall */
+      body {        
+        padding-bottom: 20px;
+      }
+      .purpleBold{
+        color:purple;        
+        font-weight: bold;
+      }
+      .gray{
+        color: gray;
+      }
+      .blueish{
+        color: rgba(151, 182, 209, 0.98);
+      }
+      .singInStuff{
+        margin-top: 9px;
+      }
+      #uName{
+        margin-top: -7px;
+      }
+      .skipListItem{
+        list-style-type: none;
+      }
+      .skipListItem a{
+        color: inherit;
+      }
+      a:visited
+      { 
+        color: rgba(218, 209, 149, 0.98);
+      }   
+      .invisibleElement{
+        color: white;
+      } 
+      /*for pure css navigation drop down*/   
+      .myNav1 ul ul{
+        display: none;
+      }
+      .myNav1 ul li:hover >ul{
+        display: block;
+      }
+      .myNav1 ul{
+        list-style: none;
+      }
+      .myNav2 ul{
+        padding: 0;
+      }
+      .myNav2 ul li{
+        float: left;
+      }
+      .myNav3 ul ul li{
+        float: none;
+      }
+      .myNav3 ul li a{
+        text-decoration: none;
+        padding: 20px 40px;        
+      }
+      .myNav4 ul{
+        position: relative;
+      }     
+      .myNav4 ul ul {
+        position: absolute;
+      } 
+      .myNav5 ul{
+        background: #efefef; 
+      }
+      .myNav5 ul li:hover{
+        background: #4b545f;
+      }
+      .myNav ul li a{
+        color: #757575;
+      }
+      .myNav5 ul li:hover a{
+        color:#fff;
+      }
+    </style>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+ 
+  <body>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>CSS: interview mock up</h1>    
+        <h2> (part-2)</h2>    
+        <h2>Pure css mock up for intermediate JS developer</h2>
+        <p>July 05, 2014</p>
+        <!-- <div id="fb-root"></div><div class="fb-like" data-href="http://www.thatjsdude.com/interview/css.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div> &nbsp;<div class="g-plusone"></div> -->
+      </div>
+    </div>
+    <div class="container">
+      <!-- Example row of columns -->
+
+      <div class="row center">        
+        <!-- <iframe width="853" height="480" src="//www.youtube.com/embed/Rx_JFOSxgpY" frameborder="0" allowfullscreen></iframe> -->
+      </div>
+            <!-- 
+      <p class="gray"> <span class="purpleBold">Warning!</span>, if you have couple of tattoos in your body, this is not the right place. You certainly have more in depth knowledge, fancy portfolio and you have to express that. These questions are for lazy intermediate JS developers to get the job by creating an illusion of familiarity with css---</p> -->
+        <pre><code>
+//header at top followed by a list of content blurbs (in this example, 4)
+
+//media query min-width 500 px: two columns of content with spacing
+// header
+// content 1        content 2
+// content 3        content 4
+//
+// text “Header” width 100% height 100px background green
+// text “Content #” width 200px height 200px background red
+
+//media query max-width 499 px: one column of content with spacing
+// header
+// content 1
+// content 2
+// content 3
+// content 4
+//
+// text “Header” width 100% height 100px background green
+// text “Content #” width 100% height 200px background blue
+
+        </code></pre>
+
+        <div>
+          <h2>Pure css navigation</h2>
+          <p><strong>Question: </strong> Can you create a navigation like the image below? Doesnt have to pretty. Don't spend more than 10min.</p>
+          <img src="images/layout.png">
+          <h4>Step-1: Create html</h4>
+          <p>Just create an unordered list <code>&lt;ul&gt;&lt;/ul&gt;</code> and all the menu options will be list item <code>&lt;li&gt;&lt;/li&gt;</code>. And to navigate to somewhere we will use an anchor tag <code>&lt;a&gt;&lt;/a&gt;</code>. If you have a drop down menu, then create unordered list list the list item.</p>
+          <pre><code>
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;JavaScript&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Basic JavaScript&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Beginners Algorithm&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dom related&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;CSS&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Basic CSS questions&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Pure CSS mockup&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Web&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Data Structure&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Linked List&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Search and Sort&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tree&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Graph, map, vector&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;    
+  &lt;/ul&gt;
+&lt;/nav&gt;
+          </code></pre>
+          <p><strong>output:</strong> will look like this</p>
+          <nav>
+            <ul>
+              <li><a href="#">JavaScript</a></li>
+              <ul>
+                <li><a href="#">Basic JavaScript</a></li>
+                <li><a href="#">Beginners Algorithm</a></li>
+                <li><a href="#">Dom related</a></li>
+              </ul>
+              <li><a href="#">CSS</a></li>
+              <ul>
+                <li><a href="#">Basic CSS questions</a></li>
+                <li><a href="#">Pure CSS mockup</a></li>
+              </ul>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">Web</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <ul>
+                <li><a href="#">Linked List</a></li>
+                <li><a href="#">Search and Sort</a></li>
+                <li><a href="#">Tree</a></li>
+                <li><a href="#">Graph, map, vector</a></li>
+              </ul>
+            </ul>
+          </nav>
+          <h4>Step -2: add style</h4>
+          <p>We will add three style. first, take off the list style. Here we will remove the unordered list under nav. Secondly, we will hide the child content of the menu. to do this, we will call display: none for ul under ul. Third, if you hover over a list item, then display the ul under it</p>
+          <pre><code>
+nav ul{
+  list-style:none;
+}
+
+nav ul ul{
+  display: none;
+}
+
+nav ul li:hover > ul{
+  display: block;
+}
+          </code></pre>
+          <strong>output:</strong>
+          <nav class="myNav1">
+            <ul>              
+              <li><a href="#">JavaScript</a>
+                <ul>
+                  <li><a href="#">Basic JavaScript</a></li>
+                  <li><a href="#">Beginners Algorithm</a></li>
+                  <li><a href="#">Dom related</a></li>
+                </ul>
+              </li>              
+              <li><a href="#">CSS</a>
+                <ul>
+                  <li><a href="#">Basic CSS questions</a></li>
+                  <li><a href="#">Pure CSS mockup</a></li>
+                </ul>
+              </li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">Web</a></li>
+              <li><a href="#">Data Structure</a>
+                <ul>
+                  <li><a href="#">Linked List</a></li>
+                  <li><a href="#">Search and Sort</a></li>
+                  <li><a href="#">Tree</a></li>
+                  <li><a href="#">Graph, map, vector</a></li>
+                </ul>
+              </li>              
+            </ul>
+          </nav>
+          <h4>Step -3: add more style</h4>
+          <p>The first problem, we have there is things are offset from the left. So, we will add padding 0 for ul. In a menu items at the root of the menu are styled side by side in a horizontal level. Hence, we will add float left for all the list item under unordered list.</p>
+          <pre><code>
+nav ul{  
+  padding: 0;
+}
+nav ul li{
+  float: left;
+}
+          </code></pre>
+          <strong>output:</strong>
+          <div>
+            <nav class="myNav1 myNav2">
+            <ul>              
+              <li><a href="#">JavaScript</a>
+                <ul>
+                  <li><a href="#">Basic JavaScript</a></li>
+                  <li><a href="#">Beginners Algorithm</a></li>
+                  <li><a href="#">Dom related</a></li>
+                </ul>
+              </li>              
+              <li><a href="#">CSS</a>
+                <ul>
+                  <li><a href="#">Basic CSS questions</a></li>
+                  <li><a href="#">Pure CSS mockup</a></li>
+                </ul>
+              </li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">Web</a></li>
+              <li><a href="#">Data Structure</a>
+                <ul>
+                  <li><a href="#">Linked List</a></li>
+                  <li><a href="#">Search and Sort</a></li>
+                  <li><a href="#">Tree</a></li>
+                  <li><a href="#">Graph, map, vector</a></li>
+                </ul>
+              </li>              
+            </ul>
+          </nav>
+          </div>
+          <p class="">Content Below 1</p>
+          <p class="">Content Below 2</p>
+          <h4>Step -4: add more style</h4>
+          <p>Now will solve two problem. Most important problem is, As the menu item is sitting next to each other </p>
+          <pre><code>
+nav ul ul li{
+  float: none;
+}
+
+nav ul li a{
+  padding: 20px 40px;        
+}
+          </code></pre>
+          <strong>output:</strong>
+          <div>
+            <nav class="myNav1 myNav2 myNav3">
+              <ul>              
+                <li><a href="#">JavaScript</a>
+                  <ul>
+                    <li><a href="#">Basic JavaScript</a></li>
+                    <li><a href="#">Beginners Algorithm</a></li>
+                    <li><a href="#">Dom related</a></li>
+                  </ul>
+                </li>              
+                <li><a href="#">CSS</a>
+                  <ul>
+                    <li><a href="#">Basic CSS questions</a></li>
+                    <li><a href="#">Pure CSS mockup</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Data Structure</a>
+                  <ul>
+                    <li><a href="#">Linked List</a></li>
+                    <li><a href="#">Search and Sort</a></li>
+                    <li><a href="#">Tree</a></li>
+                    <li><a href="#">Graph, map, vector</a></li>
+                  </ul>
+                </li>              
+              </ul>
+            </nav>
+          </div>
+          <p class="">Content Below 1</p>
+          <p class="">Content Below 2</p>
+          <p class="">Content Below 3</p>
+          <p class="">Content Below 4</p>
+          <div>
+          <h4>Step -5: add more style</h4>
+          <p>To avoid forcing content below. you have to apply two rules. First, make ul under nav to be positioned as relative. second, make ul under ul (which contains sub menu items), to be positioned relative</p>
+          <p>Now, sub menu will not be forced below.</p>
+          <pre><code>
+nav ul{
+  position: relative;
+}     
+nav ul ul {
+  position: absolute;
+}
+          </code></pre>
+          <strong>output:</strong>
+          <div>
+            <nav class="myNav1 myNav2 myNav3 myNav4">
+              <ul>              
+                <li><a href="#">JavaScript</a>
+                  <ul>
+                    <li><a href="#">Basic JavaScript</a></li>
+                    <li><a href="#">Beginners Algorithm</a></li>
+                    <li><a href="#">Dom related</a></li>
+                  </ul>
+                </li>              
+                <li><a href="#">CSS</a>
+                  <ul>
+                    <li><a href="#">Basic CSS questions</a></li>
+                    <li><a href="#">Pure CSS mockup</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Data Structure</a>
+                  <ul>
+                    <li><a href="#">Linked List</a></li>
+                    <li><a href="#">Search and Sort</a></li>
+                    <li><a href="#">Tree</a></li>
+                    <li><a href="#">Graph, map, vector</a></li>
+                  </ul>
+                </li>              
+              </ul>
+            </nav>
+          </div>
+          </div>
+          <p>Content Below 1</p>
+          <p>Content Below 2</p>
+          <p>Content Below 3</p>
+          <p>Content Below 4</p>
+          <div>
+          <h4>Step - 6: put some color</h4>
+          <p>To avoid forcing content below. you have to apply two rules. First, make ul under nav to be positioned as relative. second, make ul under ul (which contains sub menu items), to be positioned relative</p>
+          <p>Now, sub menu will not be forced below.</p>
+          <pre><code>
+nav ul{
+  background: #efefef; 
+}
+nav ul li:hover{
+  background: #4b545f;
+}
+nav ul li a{
+  color: #757575;
+}
+nav ul li:hover a{
+  color:#fff;
+}
+          </code></pre>
+          <strong>output:</strong>
+          <div>
+            <nav class="myNav1 myNav2 myNav3 myNav4 myNav5">
+              <ul>              
+                <li><a href="#">JavaScript</a>
+                  <ul>
+                    <li><a href="#">Basic JavaScript</a></li>
+                    <li><a href="#">Beginners Algorithm</a></li>
+                    <li><a href="#">Dom related</a></li>
+                  </ul>
+                </li>              
+                <li><a href="#">CSS</a>
+                  <ul>
+                    <li><a href="#">Basic CSS questions</a></li>
+                    <li><a href="#">Pure CSS mockup</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Data Structure</a>
+                  <ul>
+                    <li><a href="#">Linked List</a></li>
+                    <li><a href="#">Search and Sort</a></li>
+                    <li><a href="#">Tree</a></li>
+                    <li><a href="#">Graph, map, vector</a></li>
+                  </ul>
+                </li>              
+              </ul>
+            </nav>
+          </div>
+          </div>
+          <h4>End</h4>
+          <p> ref: <a href="http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu">create pure css</a> <a href="http://cssdeck.com/labs/pure-css3-smooth-drop-down-menu">Extra one</a></p>
+        </div>
+        <div>
+          <h2>psd to mockup</h2>
+          <li>follow this video serios of <a href="http://css-tricks.com/video-screencasts/1-converting-a-photoshop-mockup-part-1-of-3/">css tricks</a></li>
+        </div>
+        <div>
+          <h2>create mock</h2>
+          <img src="images/interview_mock.png">
+        </div>
+        <div>
+          <h2>create another mock</h2>
+          <img style="width:70%; height:50%" src="images/layout2.png">
+          <p>Will have left and right panel. and you will have floated elements inside it left side name and text and the right side number of likes</p>
+        </div>
+        <div>
+          <h2>little higher level</h2>
+          <img style="width:70%; height:50%" src="images/layout3.png">
+          <p>floated items inside floated times and two sides</p>
+          <p>left side will be 200px and right side will be rest of the page and in terms of percentage</p>
+        </div>
+        <div>
+          <h2>three column layout and width related problem</h2>
+          <p>search for it or at least try to make something up</p>
+        </div>        
+        <div>
+          <h2>create a button like css tricks interview</h2>
+          <p><a href="http://css-tricks.com/interview-questions-css/">link for css tricks</a> and there you will find so many solutions. learn it and put it here</p>
+        </div>
+        <div class="bg-danger">
+          <h2>Don't worry about the questions here</h2>
+          <p>this is only for developing layout from css</p>
+        </div>
+       <h3>List of Questions</h3>
+       <ol>
+          <li><a href="http://www.instantshift.com/2010/03/15/47-css-tips-tricks-to-take-your-site-to-the-next-level/"> very good 47 css tips and tricks</a></li>
+          <li>How do u center hotizontal center</li>
+          <li>vertical centering text with line height</li>
+          <li>vetical center of block level layout</li>
+          <li>link style order</li>
+          <li>min height fix for IE (14)</li>
+          <li>How to set base font size (15)</li>
+          <li>how to do drop caps by css</li>
+          <li>setting padding on background image/ stretching (23, 24)</li>
+          <li>use image a list bullets(26)</li>
+          <li>swap background image on hover</li>
+          <li>basic 3 column layout (33)</li>
+          <li>prevent line break</li>
+          <li>create circles with border radius (45)</li>
+          <li>css tooltips</li>
+          <li>ref: <a href="http://www.delimited.io/blog/2014/6/17/force-directed-graphs-in-d3">Force directed graph in d3</a></li>
+          <li><a href="http://fortysevenmedia.com/blog/archives/making_your_footer_stay_put_with_css/">Making your footer saty at foot with css</a></li>
+          <li><a href="http://blog.themeforest.net/tutorials/vertical-centering-with-css/">five ways of vertical centering</a></li>
+          <li><a href="http://24ways.org/2008/making-modular-layout-systems/">making modular layout</a></li>
+          <li><a href="">bar chart with css (ggl it)</a></li>
+          <li><a href="http://www.1stwebdesigner.com/css/advanced-css-text-effects-web-typography-tips/">22 advanced css text effect</a></li>
+          <li><a href="http://www.sitepoint.com/12-little-known-css-facts">css 12 little known facts</a></li>
+          <li><a href="http://alistapart.com/article/css-shapes-101">css shapes</a></li>
+       </ol>
+       <li>write a simple slide show page. bonus is not to use any css</li>
+       <li>how css box model will defer </li>
+       <li>How would a serve a html file in multiple language</li>
+       <li>what are the building blocks of html5</li>
+       
+       
+       <h2>References</h2>
+       <ul>
+         <li><a href="http://blog.themeforest.net/general/15-css-tricks-that-must-be-learned/">15 css tricks (just read it)</a></li>
+         <li><a href="">css tricks special button. Practice it</a></li>
+         <li><a href="http://alistapart.com/article/css-shapes-101">Css Shapes 101. read it</a></li>         
+       </ul>
+       good site design: 
+       <ol>
+         <li><a href="http://www.christopher-ware.com/">christoper ware</a></li>
+       </ol>
+       <div>
+         <h2>other questions</h2>
+         <ol>
+            <li><a href="http://www.pixelbind.com/make-a-div-stick-when-you-scroll/">make a div follow when u scroll</a></li>
+            <li>two column on fixed another fluid <a href="http://stackoverflow.com/questions/5195836/2-column-div-layout-right-column-with-fixed-width-left-fluid">check this </a> or <a href="http://radiatingstar.com/make-a-layout-with-fluid-and-fixed-size-columns">another example</a></li>
+           <li>how quirks mode changes css box model</li>
+           <li>why quirks mode is used</li>
+           <li>what are the problem of quirk mode in old browser. may be FOUC (flash of unstyled content). most likely happens with old IE</li>
+           <li>why inline elementd dont have width</li>
+           <li>How you increase performance of your css</li>
+           <li></li>
+           <li>How will you make a website response </li>
+           <li>If you want to make a website responsive, you will you start</li>
+           <li>how will you start when you have to make a site compatible to different browser</li>
+         </ol>
+       </div>
+       <div>
+        <h2>Floats and computed height</h2>
+        <h4>will help in interview</h4>
+        <p>A parent element that has only floated content will have a computed height: 0;. Add a clearfix to the parent to force browsers to compute a height.</p>
+        <p>ref: <a href="http://wtfhtmlcss.com/"> wtf css (get others)</a></p>
+      </div>
+       <h3>Deleted Scenes!</h3>
+       <p class="gray">Looks like these are for hardcore designer folks. Hence, didn't make in for developers.</p>
+        <ul>  
+        
+        </ul>
+        <p><strong>Need more:</strong> <strong><a href="html.html">HTML Interview Questions</a></strong>, <strong><a href="js1.html">JavaScript Beginners Algorithm</a></strong></p>
+
+<div>
+</div>
+<p><strong>Need more:</strong> <strong><a href="html.html">HTML Interview Questions</a></strong>, <strong><a href="js1.html">JavaScript Beginners Algorithm</a></strong></p>
+
+<p><a href="http://www.sitepoint.com/12-little-known-css-facts/">12 little known css facts</a></p>
+<p><a href="http://alistapart.com/article/css-shapes-101">css shapes 101</a></p>
+<div>
+  <h3 class="purpleBold">Express anger!</h3>
+<!--   <p class="gray">Feel free to express your anger (sorry folks, you have to use g+.). Also point out my mistakes ( technical, wrong answer, spelling, grammar, sentence..., whatever), let your dude learn and grow.</p>
+  <script src="https://apis.google.com/js/plusone.js"></script>
+  <div class="g-comments"
+      data-href="http://www.thatjsdude.com/interview/css2.html"
+      data-width="642"
+      data-first_party_property="BLOGGER"
+      data-view_type="FILTERED_POSTMOD">
+  </div>         -->
+</div>
+      <hr>
+
+      <footer>
+        <p>&copy;thatJSDude 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.0.3.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/highlight.pack.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="js/toggleExample.js"></script>
+    <script type="text/javascript">
+      // //social plugins
+      // //g+
+      // (function() {
+      //   var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      //   po.src = 'https://apis.google.com/js/platform.js';
+      //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      // })();
+      // //fb
+      // (function(d, s, id) {
+      //   var js, fjs = d.getElementsByTagName(s)[0];
+      //   if (d.getElementById(id)) return;
+      //   js = d.createElement(s); js.id = id;
+      //   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      //   fjs.parentNode.insertBefore(js, fjs);
+      // }(document, 'script', 'facebook-jssdk'));
+    </script>
+  </body>
+</html>
