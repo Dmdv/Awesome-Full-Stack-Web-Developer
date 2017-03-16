@@ -5,30 +5,69 @@
 @Project: awesome-full-stack-web-developer
 @Filename: README.md
 @Last modified by:   anas
-@Last modified time: Wed, 15th Mar 2017, T 13:26 +01:00
+@Last modified time: Thu, 16th Mar 2017, T 08:46 +01:00
 @License: MIT License
 @Copyright: Copyright (c) 2017 Anas Aboureada <anasaboureada.com>
 -->
-
 
 
 # Awesome Full-Stack Web Developer
 
 Tools, tutorials and interview questions for Full-Stack web developers.
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Awesome Full-Stack Web Developer](#awesome-full-stack-web-developer)
+	- [Important Topics:](#important-topics)
+		- [JavaScript](#javascript)
+		- [CSS](#css)
+		- [General](#general)
+	- [Books](#books)
+	- [Cheat Sheets](#cheat-sheets)
+	- [Interview Questions](#interview-questions)
+	- [Udacity Nanodegrees](#udacity-nanodegrees)
+		- [Front-End Web Developer Nanodegree](#front-end-web-developer-nanodegree)
+		- [Senior Web Developer Nanodegree](#senior-web-developer-nanodegree)
+		- [Full Stack Web Developer Nanodegree](#full-stack-web-developer-nanodegree)
+
+<!-- /TOC -->
 
 ## Important Topics:
 
-- [You Do Not Need Jquery](./notes/you_do_not_need_jquiry.md)
-- [What Do I Need to Know to Ace a JavaScript Interview?](./notes/js_interview.md)
-- [Scalability (video)](https://www.youtube.com/watch?v=-W9F__D3oY4)
-- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+### JavaScript
+
 - [Dependency Injection basics (video)](https://www.youtube.com/watch?v=0X1Ns2NRfks)
 - [Functional programming in JavaScript (video playlist)](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
 - [Object Creation in JavaScript (video playlist)](https://www.youtube.com/playlist?list=PL0zVEGEvSaeHBZFy6Q8731rcwk0Gtuxub)
 - [Javascript DOM: event delegation(video)](https://www.youtube.com/watch?v=JStineSts7s)
 - [javaScript call apply and bind (video)](https://www.youtube.com/watch?v=c0mLRpw-9rI)
+- [JavaScript Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
+
+
+### CSS
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Using SVG](https://css-tricks.com/using-svg/)
+- [Everything You Need To Know About SVG](https://css-tricks.com/lodge/svg/)
+- [Keyframe Animation Syntax](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
+- [css animation](https://css-tricks.com/almanac/properties/a/animation/)
+
+### General
+
+- [You Do Not Need Jquery](./notes/you_do_not_need_jquiry.md)
+- [Scalability (video)](https://www.youtube.com/watch?v=-W9F__D3oY4)
+
+## Books
+
+- [ANGULARJS: NOVICE TO NINJA](./books/angularjs_novice_to_ninja.pdf)
+- [Front-End Handbook](./books/front_end_handbook_2017.pdf)
+- [Javascript Novice to Ninja](./books/javascript_novice_to_ninja.pdf)
+- [Problem Solving With Algorithms And Data Structures](./books/problem_solving_with_algorithms_and_data_structures.pdf)
+- [Learn CSS Layout the pedantic way](./books/box_positioning_in_css.pdf)
+- [Mixu's Node book](./books/mixus_node.pdf)
+- [Single page apps in depth](./books/single_page_app.pdf)
+- [Distributed systems: for fun and profit](./books/distributed_systems.pdf)
+- [Eloquent JavaScript](./books/eloquent_javaScript.pdf)
 
 ## Cheat Sheets
 
@@ -37,19 +76,11 @@ Tools, tutorials and interview questions for Full-Stack web developers.
 - [Jquiry cheat sheet](./cheat_sheets/jquery_cheat_sheet_1.3.2.pdf)
 - [Algorithm Complexity cheat sheet](./cheat_sheets/complexity_cheatsheet.pdf)
 
-## Books
-
-- [Front-End Handbook](./books/front_end_handbook_2017.pdf)
-- [Javascript Novice to Ninja](./books/javascript_novice_to_ninja.pdf)
-- [Problem Solving With Algorithms And Data Structures](./books/problem_solving_with_algorithms_and_data_structures.pdf)
-- [Learn CSS Layout the pedantic way](./books/box_positioning_in_css.pdf)
-- [Mixu's Node book](./books/mixus_node.pdf)
-- [Single page apps in depth](./books/single_page_app.pdf)
-- [Distributed systems: for fun and profit](./books/distributed_systems.pdf)
-
 ## Interview Questions
 
 - [CSS interview questions and answers](./interview_questions/css_interview_questions_and_answers.md)
+- [Interview Questions and Exercises About CSS](https://css-tricks.com/interview-questions-css/)
+- [What Do I Need to Know to Ace a JavaScript Interview?](./notes/js_interview.md)
 
 ## Udacity Nanodegrees
 
