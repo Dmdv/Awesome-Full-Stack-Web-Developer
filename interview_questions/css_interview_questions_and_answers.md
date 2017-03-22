@@ -3,25 +3,26 @@
 ### Q: Explain CSS Box Model.
 
 #### Answer
+
 -   A: The CSS box model is essentially a box that wraps around every
     HTML element. It consists of: margins, borders, padding, and the
     actual content. The image below illustrates the box model.
 
-- *Important:* When you set the width and height properties of
-an element with CSS, you just set the width and height of the content
-area. To calculate the full size of an element, you must also add
-padding, borders and margins.
+-   _Important:_ When you set the width and height properties of
+    an element with CSS, you just set the width and height of the content
+    area. To calculate the full size of an element, you must also add
+    padding, borders and margins.
 
-- *Note for old IE:* Internet Explorer 8 and earlier versions,
-include padding and border in the width property. To fix this problem,
-add a &lt;!DOCTYPE html&gt; to the HTML page.
-![Box Model](img/CSS_Box_Model.png)
+-   _Note for old IE:_ Internet Explorer 8 and earlier versions,
+    include padding and border in the width property. To fix this problem,
+    add a &lt;!DOCTYPE html> to the HTML page.
+    ![Box Model](img/CSS_Box_Model.png)
 
------------------------------------------------------------------------
+* * *
 
 ### Q: What is universal selector?
 
-- Rather than selecting elements of a specific type, the universal selector quite simply matches the name of any element type &lt;body&gt;
+-   Rather than selecting elements of a specific type, the universal selector quite simply matches the name of any element type &lt;body>
 
 ```css
 * {
@@ -31,41 +32,47 @@ add a &lt;!DOCTYPE html&gt; to the HTML page.
 
 -   This rule renders the content of every element in our document in black.
 
-------------------------------------------------------------------------
+* * *
 
 ### Q: How CSS style overriding works?
 
 -   Following is the rule to override any Style Sheet Rule −
 
-    - Any inline style sheet takes highest priority. So, it will override any rule defined in &lt;style&gt;...&lt;/style&gt; tags or rules defined in any external style sheet file.
+    -   Any inline style sheet takes highest priority. So, it will override any rule defined in &lt;style>...&lt;/style> tags or rules defined in any external style sheet file.
 
-    - Any rule defined in &lt;style&gt;...&lt;/style&gt; tags will override rules defined in any external style sheet file.
+    -   Any rule defined in &lt;style>...&lt;/style> tags will override rules defined in any external style sheet file.
 
-    - Any rule defined in external style sheet file takes lowest priority, and rules defined in this file will be applied only when above two rules are not applicable.
+    -   Any rule defined in external style sheet file takes lowest priority, and rules defined in this file will be applied only when above two rules are not applicable.
 
-------------------------------------------------------------------------
+* * *
 
 ### In CSS3, how would you select:
-- Every <a> element whose href attribute value begins with “https”.
-- Every <a> element whose href attribute value ends with “.pdf”.
-- Every <a> element whose href attribute value contains the substring “css”.
+
+-   Every <a> element whose href attribute value begins with “https”.
+-   Every <a> element whose href attribute value ends with “.pdf”.
+-   Every <a> element whose href attribute value contains the substring “css”.
 
 #### Answer
 
-Select every &lt;a&gt; element whose href attribute value begins with “https”:
+Select every &lt;a> element whose href attribute value begins with “https”:
+
 ```css
     a[href^="https"]
 ```
-Select every &lt;a&gt; element whose href attribute value ends with “.pdf”:
+
+Select every &lt;a> element whose href attribute value ends with “.pdf”:
+
 ```css
     a[href$=".pdf"]
 ```
-Select every &lt;a&gt; element whose href attribute value contains the substring “css”:
+
+Select every &lt;a> element whose href attribute value contains the substring “css”:
+
 ```css
     a[href*="css"]
 ```
 
-------------------------------------------------------------------------
+* * *
 
 ### Given the following HTML:
 
@@ -81,14 +88,13 @@ Select every &lt;a&gt; element whose href attribute value contains the substring
 ```
 
 How could you use CSS to achieve the following automatic numbering:
-```
-1.  Heading Title
-1.1) Subheading title
-1.2) Subheading Title
-1.  Heading Title
-2.1) Subheading Title
-1.  Heading Title
-```
+
+    1.  Heading Title
+    1.1) Subheading title
+    1.2) Subheading Title
+    1.  Heading Title
+    2.1) Subheading Title
+    1.  Heading Title
 
 #### Answer
 
@@ -111,11 +117,12 @@ h2:before {
 }
 ```
 
-------------------------------------------------------------------------
+* * *
 
 ### What are pseudo classes and what are they used for?
 
 #### Answer
+
 Pseudo classes are similar to classes, but are not explicitly defined in
 the markup, and are used to add additional effects to selected HTML
 elements such as link colors, hover actions, etc. Pseudo classes are
@@ -126,67 +133,69 @@ red } Pseudo-class syntax: selector:pseudo-class { property:value;}
 Syntax for using a pseudo class within a CSS class:
 selector.class:pseudo-class { property:value;}
 
-*:link, :visited, :hover, :active, :first~line~* are all examples of
+_:link, :visited, :hover, :active, :first~line~_ are all examples of
 pseudo classes, used to call a specific action on an element, such as
 the changing of a link color after it has been visited.
 
-------------------------------
+* * *
+
 ### All CSS Pseudo Classes
 
-
-| Selector | Example | Example description |
-|---|---|---|
-| :active  | a:active | Selects the active link |
-| :checked | input:checked | Selects every checked `<input>` element |
-| :disabled | input:disabled | Selects every disabled `<input>` element |
-| :empty | p:empty | Selects every `<p>` element that has no children |
-| :enabled | input:enabled | Selects every enabled `<input>` element |
-| :first-child | p:first-child | Selects every `<p>` elements that is the first child of its parent |
-| :first-of-type | p:first-of-type | Selects every `<p>` element that is the first `<p>` element of its parent |
-| :focus | input:focus | Selects the `<input>` element that has focus |
-| :hover | a:hover | Selects links on mouse over |
-| :in-range | input:in-range | Selects `<input>` elements with a value within a specified range |
-| :invalid | input:invalid | Selects all `<input>` elements with an invalid value |
-| :lang(_language_) | p:lang(it) | Selects every `<p>` element with a lang attribute value starting with "it" |
-| :last-child | p:last-child | Selects every `<p>` elements that is the last child of its parent |
-| :last-of-type | p:last-of-type | Selects every `<p>` element that is the last `<p>` element of its parent |
-| :link | a:link | Selects all unvisited links |
-| :not(selector) | :not(p) | Selects every element that is not a `<p>` element |
-| :nth-child(n) | p:nth-child(2) | Selects every `<p>` element that is the second child of its parent |
-| :nth-last-child(n) | p:nth-last-child(2) | Selects every `<p>` element that is the second child of its parent, counting from the last child |
+| Selector             | Example               | Example description                                                                                      |
+| -------------------- | --------------------- | -------------------------------------------------------------------------------------------------------- |
+| :active              | a:active              | Selects the active link                                                                                  |
+| :checked             | input:checked         | Selects every checked `<input>` element                                                                  |
+| :disabled            | input:disabled        | Selects every disabled `<input>` element                                                                 |
+| :empty               | p:empty               | Selects every `<p>` element that has no children                                                         |
+| :enabled             | input:enabled         | Selects every enabled `<input>` element                                                                  |
+| :first-child         | p:first-child         | Selects every `<p>` elements that is the first child of its parent                                       |
+| :first-of-type       | p:first-of-type       | Selects every `<p>` element that is the first `<p>` element of its parent                                |
+| :focus               | input:focus           | Selects the `<input>` element that has focus                                                             |
+| :hover               | a:hover               | Selects links on mouse over                                                                              |
+| :in-range            | input:in-range        | Selects `<input>` elements with a value within a specified range                                         |
+| :invalid             | input:invalid         | Selects all `<input>` elements with an invalid value                                                     |
+| :lang(_language_)    | p:lang(it)            | Selects every `<p>` element with a lang attribute value starting with "it"                               |
+| :last-child          | p:last-child          | Selects every `<p>` elements that is the last child of its parent                                        |
+| :last-of-type        | p:last-of-type        | Selects every `<p>` element that is the last `<p>` element of its parent                                 |
+| :link                | a:link                | Selects all unvisited links                                                                              |
+| :not(selector)       | :not(p)               | Selects every element that is not a `<p>` element                                                        |
+| :nth-child(n)        | p:nth-child(2)        | Selects every `<p>` element that is the second child of its parent                                       |
+| :nth-last-child(n)   | p:nth-last-child(2)   | Selects every `<p>` element that is the second child of its parent, counting from the last child         |
 | :nth-last-of-type(n) | p:nth-last-of-type(2) | Selects every `<p>` element that is the second `<p>` element of its parent, counting from the last child |
-| :nth-of-type(n) | p:nth-of-type(2) | Selects every `<p>` element that is the second `<p>` element of its parent |
-| :only-of-type | p:only-of-type | Selects every `<p>` element that is the only `<p>` element of its parent |
-| :only-child | p:only-child | Selects every `<p>` element that is the only child of its parent |
-| :optional | input:optional | Selects `<input>` elements with no "required" attribute |
-| :out-of-range | input:out-of-range | Selects `<input>` elements with a value outside a specified range |
-| :read-only | input:read-only | Selects `<input>` elements with a "readonly" attribute specified |
-| :read-write | input:read-write | Selects `<input>` elements with no "readonly" attribute |
-| :required | input:required | Selects `<input>` elements with a "required" attribute specified |
-| :root | root | Selects the document's root element |
-| :target | #news:target | Selects the current active #news element (clicked on a URL containing that anchor name) |
-| :valid | input:valid | Selects all `<input>` elements with a valid value |
-| :visited | a:visited | Selects all visited links |
+| :nth-of-type(n)      | p:nth-of-type(2)      | Selects every `<p>` element that is the second `<p>` element of its parent                               |
+| :only-of-type        | p:only-of-type        | Selects every `<p>` element that is the only `<p>` element of its parent                                 |
+| :only-child          | p:only-child          | Selects every `<p>` element that is the only child of its parent                                         |
+| :optional            | input:optional        | Selects `<input>` elements with no "required" attribute                                                  |
+| :out-of-range        | input:out-of-range    | Selects `<input>` elements with a value outside a specified range                                        |
+| :read-only           | input:read-only       | Selects `<input>` elements with a "readonly" attribute specified                                         |
+| :read-write          | input:read-write      | Selects `<input>` elements with no "readonly" attribute                                                  |
+| :required            | input:required        | Selects `<input>` elements with a "required" attribute specified                                         |
+| :root                | root                  | Selects the document's root element                                                                      |
+| :target              | #news:target          | Selects the current active #news element (clicked on a URL containing that anchor name)                  |
+| :valid               | input:valid           | Selects all `<input>` elements with a valid value                                                        |
+| :visited             | a:visited             | Selects all visited links                                                                                |
 
--------------------------------
+* * *
+
 ### All CSS Pseudo Elements
 
-| Selector | Example | Example description |
-|---|---|---|
-| ::after | p::after | Insert content after every <p> element |
-| ::before | p::before | Insert content before every <p> element |
-| ::first-letter | p::first-letter | Selects the first letter of every <p> element |
-| ::first-line | p::first-line | Selects the first line of every <p> element |
-| ::selection | p::selection | Selects the portion of an element that is selected by a user |
+| Selector       | Example         | Example description                                          |
+| -------------- | --------------- | ------------------------------------------------------------ |
+| ::after        | p::after        | Insert content after every <p> element                       |
+| ::before       | p::before       | Insert content before every <p> element                      |
+| ::first-letter | p::first-letter | Selects the first letter of every <p> element                |
+| ::first-line   | p::first-line   | Selects the first line of every <p> element                  |
+| ::selection    | p::selection    | Selects the portion of an element that is selected by a user |
 
--------------------------------------
+* * *
+
 ### How is the float property implemented in CSS?
 
 #### Answer
 
-- Floats allow an element to be positioned horizontally, allowing elements below the floated element to flow around it.
-- Several floating elements can be placed together to make a gallery type layout.
-- Floats can only accept a left or right value.
+-   Floats allow an element to be positioned horizontally, allowing elements below the floated element to flow around it.
+-   Several floating elements can be placed together to make a gallery type layout.
+-   Floats can only accept a left or right value.
 
 ```css
 img {
@@ -195,75 +204,81 @@ width: 50px;
 margin: 5px;
 }
 ```
+
 To prevent subsequent elements from flowing around the floated element, pass in the clear property, followed by the side you wish to disable (i.e., ‘left’, ‘right’, ‘both’).
 
------------------------
+* * *
 
 ### How are inline and block elements different from each other?
 
 #### Answer
 
-- A block element is an element that takes up the full width available, and has a line break before and after it. `<h1>, <p>, <li>, and <div>` are all examples of block elements.
-- An inline element only takes up as much width as necessary, cannot accept width and height values, and does not force line breaks. <a> and <span> are examples of inline elements.
+-   A block element is an element that takes up the full width available, and has a line break before and after it. `<h1>, <p>, <li>, and <div>` are all examples of block elements.
+-   An inline element only takes up as much width as necessary, cannot accept width and height values, and does not force line breaks. <a> and <span> are examples of inline elements.
 
--------------------------
+* * *
 
 ### What is the purpose of the z-index and how is it used?
 
 #### Answer
-- The z-index helps specify the stack order of positioned elements that may overlap one another.
-- The z-index default value is zero, and can take on either a positive or negative number.
-- An element with a higher z-index is always stacked above one with a lower index.
-- Z-Index can take the following values:
-  - Auto: Sets the stack order equal to its parents.
-  - Number: Orders the stack order.
-  - Initial: Sets this property to its default value (0).
-  - Inherit: Inherits this property from its parent element.
 
-------------------------
+-   The z-index helps specify the stack order of positioned elements that may overlap one another.
+-   The z-index default value is zero, and can take on either a positive or negative number.
+-   An element with a higher z-index is always stacked above one with a lower index.
+-   Z-Index can take the following values:
+    -   Auto: Sets the stack order equal to its parents.
+    -   Number: Orders the stack order.
+    -   Initial: Sets this property to its default value (0).
+    -   Inherit: Inherits this property from its parent element.
+
+* * *
 
 ### What are the various techniques for clearing floats?
 
 #### Answer
-- At some point or another, you will likely experience a collapsed float, which you will need to address.
-- This can be accomplished several ways, including using a clearfix2, by floating the parent element of the collapsed element, or by using an overflow property3.
 
--------------------------
+-   At some point or another, you will likely experience a collapsed float, which you will need to address.
+-   This can be accomplished several ways, including using a clearfix2, by floating the parent element of the collapsed element, or by using an overflow property3.
+
+* * *
 
 ### Explain the difference between visibility:hidden and display:none
 
-
 #### Answer
-- visibility:hidden simply hides the element, while it will still take up space and affect the layout of the document.
-- display:none also hides the element, but will not take up space and the page will appear as if the element is not present.
 
---------------------------
+-   visibility:hidden simply hides the element, while it will still take up space and affect the layout of the document.
+-   display:none also hides the element, but will not take up space and the page will appear as if the element is not present.
+
+* * *
 
 ### What are some of the new features and properties in CSS3?
 
 #### Answer
-- Box model
-- New Web fonts
-- Rounded corners
-- Border Images
-- Box Shadows, Text Shadows
-- New Color schemes (RGBA)
-- Transform property
-- New Pseudo-classes
-- Multi-column layout
-- New Gradients
 
-----------------------------
+-   Box model
+-   New Web fonts
+-   Rounded corners
+-   Border Images
+-   Box Shadows, Text Shadows
+-   New Color schemes (RGBA)
+-   Transform property
+-   New Pseudo-classes
+-   Multi-column layout
+-   New Gradients
+
+* * *
 
 ### Why shouldn’t I use fixed sized fonts ?
 
 #### Answer
-- Often times, fixed font sizes will show up incorrectly on the user end and will prohibit responsiveness.
-- Using relative sizing will keep fonts proportionate in their relationships to each other and will allow for greater end user flexibility.
 
------------------------------
+-   Often times, fixed font sizes will show up incorrectly on the user end and will prohibit responsiveness.
+-   Using relative sizing will keep fonts proportionate in their relationships to each other and will allow for greater end user flexibility.
+
+* * *
 
 ### Center item vertically
+
 ```html
 <div class="center">
   <p>I am vertically and horizontally centered.</p>
@@ -271,6 +286,7 @@ To prevent subsequent elements from flowing around the floated element, pass in 
 ```
 
 #### Answer
+
 ```css
 .center {
     height: 200px;
@@ -287,23 +303,24 @@ To prevent subsequent elements from flowing around the floated element, pass in 
 }
 ```
 
----------------------------
+* * *
 
-###  What is CSS combinator?
+### What is CSS combinator?
 
 #### Answer
 
-- A combinator is something that explains the relationship between the selectors.
-- A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
-- There are four different combinators in CSS3:
+-   A combinator is something that explains the relationship between the selectors.
+-   A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+-   There are four different combinators in CSS3:
 
-  - *descendant selector (space)*: The descendant selector matches all elements that are descendants of a specified element.
-  - *child selector (>)*: The child selector selects all elements that are the immediate children of a specified element.
-  - *adjacent sibling selector (+)*: The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
-  Sibling elements must have the same parent element, and "adjacent" means "immediately following".
-  - *general sibling selector (~)*: The general sibling selector selects all elements that are siblings of a specified element.
+    -   _descendant selector (space)_: The descendant selector matches all elements that are descendants of a specified element.
+    -   _child selector (>)_: The child selector selects all elements that are the immediate children of a specified element.
+    -   _adjacent sibling selector (+)_: The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
+        Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+    -   _general sibling selector (~)_: The general sibling selector selects all elements that are siblings of a specified element.
 
-----------------------------
+* * *
+
 ### implement full-height fixed vertical navbar
 
 #### Answer
@@ -351,11 +368,12 @@ li a:hover:not(.active) {
 }
 ```
 
--------------------------------
+* * *
+
 ### Implement horizontal navigation bar
 
-
 #### Answer
+
 ```html
 <ul>
   <li><a class="active" href="#home">Home</a></li>
@@ -391,7 +409,7 @@ li a:hover {
 }
 ```
 
---------------------------------------
+* * *
 
 ### Implement dropdown list
 
@@ -457,7 +475,7 @@ li a:hover {
 }
 ```
 
---------------------------
+* * *
 
 ### implement tooltip using css
 
@@ -501,7 +519,8 @@ li a:hover {
 }
 ```
 
---------------------------
+* * *
+
 ### using image sprites - create a navigation list
 
 #### Answer
@@ -605,16 +624,17 @@ li a:hover {
 }
 ```
 
-------------------------
+* * *
 
 ### what is CSS3 box-sizing property
 
 #### Answer
+
 The CSS3 box-sizing property allows us to include the padding and border in an element's total width and height.
 
 If you set `box-sizing: border-box;` on an element padding and border are included in the width and height
 
-----------------------------
+* * *
 
 ### what is CSS3 Flexbox
 
@@ -624,7 +644,8 @@ Flexible boxes, or flexbox, is a new layout mode in CSS3.
 
 Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices.
 
-----------------------------
+* * *
+
 ### What is the difference between flexbox model and the block model
 
 #### Answer
@@ -632,7 +653,8 @@ Use of flexbox ensures that elements behave predictably when the page layout mus
 For many applications, the flexible box model provides an improvement over the block model in that it does not use floats,
 nor do the flex container's margins collapse with the margins of its contents
 
--------------------------
+* * *
+
 ### Note
 
 #### Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.

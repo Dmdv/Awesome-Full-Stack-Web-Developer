@@ -8,3 +8,5 @@ books/mixus_node.pdf filter=lfs diff=lfs merge=lfs -text
 books/Eloquent_JavaScript.pdf filter=lfs diff=lfs merge=lfs -text
 books/angularjs_novice_to_ninja.pdf filter=lfs diff=lfs merge=lfs -text
 books/eloquent_javaScript.pdf filter=lfs diff=lfs merge=lfs -text
+algorithm_and_data_structure/data_structure/videos/array.mp4 filter=lfs diff=lfs merge=lfs -text
+algorithm_and_data_structure/data_structure/videos/singly_linked_lists.mp4 filter=lfs diff=lfs merge=lfs -text

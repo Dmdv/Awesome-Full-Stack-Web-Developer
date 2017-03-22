@@ -1,0 +1,134 @@
+/**
+ * @Author: Anas Aboureada <Anas>
+ * @Date:   Thu, 16th Mar 2017, T 09:00 +01:00
+ * @Email:  me@anasaboureada.com
+ * @Last modified by:   Anas
+ * @Last modified time: Mon, 20th Mar 2017, T 17:58 +01:00
+ * @License: MIT License
+ * @Copyright: Copyright (c) 2017 Anas Aboureada <me@anasaboureada.com>
+ */
+
+body {
+  font-size: 14px;
+  font-family: 'Nova Flat', cursive;
+}
+
+h1 {
+  margin: 25px;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px gray solid;
+}
+
+.silde-show-container {
+  position: relative;
+  max-width: 1024px;
+  margin: auto;
+  box-shadow: 10px 10px 19px #888888;
+}
+
+.slide {
+  display: none;
+  max-height: 50%;
+  overflow: hidden;
+  align-items: center;
+}
+
+.slide img {
+  max-width: 100%;
+}
+
+.caption {
+  position: absolute;
+  max-width: 70%;
+  padding: 1em;
+  font-size: 1.8em;
+  bottom: 5%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f2f2f2;
+  text-align: justify;
+}
+
+.dots {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+}
+
+.dot {
+  display: inline-block;
+  font-size: 2em;
+  color: grey;
+  transition: color 0.6s ease;
+}
+
+.next, .prev {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  font-size: 3em;
+  margin-top: -16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #635f5f;
+  text-shadow: 2px 1px #989898;
+  transition: background-color 0.6s ease, color 0.4s ease;
+}
+
+.next:hover, .prev:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #dfdada;
+}
+
+.active {
+  color: #bbb;
+}
+
+.next {
+  right: 0%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+  /* or: Xms */
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+  /* or: normal */
+  animation-timing-function: ease-out;
+  /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+  animation-fill-mode: forwards;
+  /* or: backwards, both, none */
+  animation-delay: 2s;
+  /* or: Xms */
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@media (max-width: 850px) {
+  body {
+    font-size: 12px;
+  }
+  .caption {
+    bottom: 0;
+    max-width: 100%;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+}
