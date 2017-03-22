@@ -18,23 +18,24 @@ Tools, tutorials and interview questions for Full-Stack web developers.
 
 ## Table of content:
 
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:1 depthTo:6 orderedList:false updateOnSave:true withLinks:true -->
 
 - [Awesome Full-Stack Web Developer](#awesome-full-stack-web-developer)
-	- [Table of content:](#table-of-content)
-	- [Important Topics:](#important-topics)
-		- [JavaScript](#javascript)
-		- [CSS](#css)
-		- [HTML](#html)
-		- [General](#general)
-	- [Books](#books)
-	- [Cheat Sheets](#cheat-sheets)
-	- [Interview Questions](#interview-questions)
-	- [Code snippets](#code-snippets)
-	- [Full Stack Web Developer courses](#full-stack-web-developer-courses)
-	- [Related Awesome Lists:](#related-awesome-lists)
-	- [Contribute](#contribute)
-	- [License](#license)
+  - [Table of content:](#table-of-content)
+  - [Important Topics:](#important-topics)
+    - [JavaScript](#javascript)
+    - [CSS](#css)
+    - [HTML](#html)
+    - [General](#general)
+  - [Books](#books)
+  - [Cheat Sheets](#cheat-sheets)
+  - [Interview Questions](#interview-questions)
+    - [Interview preparation repos](#interview-preparation-repos)
+  - [Code snippets](#code-snippets)
+  - [Full Stack Web Developer courses](#full-stack-web-developer-courses)
+  - [Related Awesome Lists:](#related-awesome-lists)
+  - [Contribute](#contribute)
+  - [License](#license)
 
 <!-- /TOC -->
 
