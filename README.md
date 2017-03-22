@@ -92,6 +92,12 @@ Tools, tutorials and interview questions for Full-Stack web developers.
 -   [Interview Questions and Exercises About CSS](https://css-tricks.com/interview-questions-css/)
 -   [What Do I Need to Know to Ace a JavaScript Interview?](./notes/js_interview.md)
 
+### Interview preparation repos
+
+- [innterview](https://github.com/kdn251/interviews.git)
+- [Front-end Developer Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
+- [Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
+
 ## Code snippets
 
 -   [Image slider](./snippets/slide_show) Image slider using HTML5, CSS3, Vanilla JavaScript.
@@ -140,6 +146,7 @@ support hundreds of thousands of users.
 
 -   [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs)
 -   [Awesome AngularJS](https://github.com/gianarb/awesome-angularjs)
+-   [Become A Full-Stack Web Developer](https://github.com/bmorelli25/Become-A-Full-Stack-Web-Developer)
 
 ## Contribute
 
