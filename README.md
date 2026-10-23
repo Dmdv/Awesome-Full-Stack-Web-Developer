@@ -49,6 +49,7 @@ Tools, tutorials and interview questions for Full-Stack web developers.
 -   [Javascript DOM: event delegation(video)](https://www.youtube.com/watch?v=JStineSts7s)
 -   [javaScript call apply and bind (video)](https://www.youtube.com/watch?v=c0mLRpw-9rI)
 -   [JavaScript Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
+-   [Compare JSON: Object Keys, Array Order and Record IDs — BestJSON](https://bestjson.com/learn/compare-json-ignore-order) - Explains comparison rules for JSON objects, arrays and records.
 
 ### CSS
 
